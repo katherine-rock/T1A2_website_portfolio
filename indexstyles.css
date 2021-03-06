@@ -1,0 +1,197 @@
+/* General styles applicable to all versions */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    border: .5em solid #C0C0C0;
+}
+
+header {
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    color: white;
+    background-color: #570587;
+    justify-content: center;
+    border-bottom: .5em solid #C0C0C0;
+    padding: .75em;
+    font-family: 'Courgette', cursive;
+}
+
+.topmenu {
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: .75em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+/* Pseudolinks for top menu bar */
+.topmenu a:link {
+      color: black;
+    }
+
+.topmenu a:visited {
+    color: purple;
+}   
+
+.topmenu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+/* selected link - only active while clicked on */
+.topmenu a:active {
+color: #0000FF;
+}
+
+/* active link  - page currently in use*/
+.topmenu a.active {
+    font-weight: bold;
+    border-bottom: .2em solid #570587;
+}
+
+.pagetitle {
+    display: flex;
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+    margin-top: 1em; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+    padding: .7em 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    padding: .5em 0;
+}
+
+.icons img {
+    max-width: 5em;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    padding: .5em 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Pseudolinks for central section of index page */
+
+.topics a:link {
+      color: black;
+    }
+
+.topics a:visited {
+    color: purple;
+}   
+
+.topics a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+/* selected link - only active while clicked on */
+.topics a:active {
+color: #0000FF;
+}
+
+.footericons {
+    display: flex;
+    flex-basis:auto;
+    flex-shrink: 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1 / 6;
+    grid-row: 6 / 7;
+    padding: 1.5em 1em 0 1em;
+    background-color: #570587;
+    border-top: .5em solid #C0C0C0;
+    margin-top: 1.5em;
+}
+
+.footericons img {
+    max-width: 3em;
+
+}
+
+.footerlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1 / 6;
+    grid-row: 7 / 8;
+    padding: 0 1em 1em 1em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #570587;
+}
+
+.footerlinks a {
+    max-width: 3em;
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 6;
+    grid-row: 8 / 9;
+    padding: 1em;
+    font-family: 'Courgette', cursive;
+    background-color: #570587;
+    color: white;
+}
+
+/* Pseudolinks for footer menu */
+
+.footerlinks a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+/* selected link - only active while clicked on */
+.footerlinks a:active {
+color: #0000FF;
+}
+
+/* active link  - page currently in use - will need to adapt so it is highlighted for desktop/ipad but greyed out on mobile */
+.footerlinks a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Will need to hide the top menu for mobile version */
