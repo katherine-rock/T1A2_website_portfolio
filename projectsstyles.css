@@ -1,0 +1,228 @@
+/* General styles applicable to all versions */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+    padding: .5em 0;
+}
+
+h5 {
+    padding-bottom: .4em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    border: .5em solid #C0C0C0;
+}
+
+header {
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    color: white;
+    background-color: #570587;
+    justify-content: center;
+    border-bottom: .5em solid #C0C0C0;
+    padding: .75em;
+    font-family: 'Courgette', cursive;
+}
+
+.topmenu {
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: .75em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+/* Pseudolinks for top menu bar */
+.topmenu a:link {
+      color: black;
+    }
+
+.topmenu a:visited {
+    color: purple;
+}   
+
+.topmenu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+/* selected link - only active while clicked on */
+.topmenu a:active {
+color: #0000FF;
+}
+
+/* active link  - page currently in use*/
+.topmenu a.active {
+    font-weight: bold;
+    border-bottom: .2em solid #570587;
+}
+
+.pagetitle {
+    display: flex;
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+    margin-top: 1em; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.project_one img, .project_two img, .project_three img {
+    max-width: 100%;
+}
+
+.project_one h3, p {
+    margin: 0 2em;
+}
+
+.project_two h3, p {
+    margin: 0 2em;
+}
+
+.project_three h3, p {
+    margin: 0 2em;
+}
+
+.project_one a, .project_two a, .project_three a {
+    margin: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.project_one {
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+    margin: 1em 0;
+    border-bottom: .5em solid #C0C0C0;
+    padding-bottom: 2em;
+}
+
+.project_two {
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+    margin: 1em 0;
+    border-bottom: .5em solid #C0C0C0;
+    padding-bottom: 2em;
+}
+
+.project_three {
+    grid-column: 1 / 6;
+    grid-row: 6 / 7;
+    margin: 1em 0;
+}
+
+
+
+/* Pseudolinks for central section of index page */
+
+.topics a:link {
+      color: black;
+    }
+
+.topics a:visited {
+    color: purple;
+}   
+
+.topics a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+/* selected link - only active while clicked on */
+.topics a:active {
+color: #0000FF;
+}
+
+.footericons {
+    display: flex;
+    flex-basis:auto;
+    flex-shrink: 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1 / 6;
+    grid-row: 7/ 8;
+    padding: 1.5em 1em 0 1em;
+    background-color: #570587;
+    border-top: .5em solid #C0C0C0;
+    margin-top: 1.5em;
+}
+
+.footericons img {
+    max-width: 3em;
+
+}
+
+.footerlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1 / 6;
+    grid-row: 8 / 9;
+    padding: 0 1em 1em 1em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #570587;
+}
+
+.footerlinks a {
+    max-width: 3em;
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 6;
+    grid-row: 9 / 10;
+    padding: 1em;
+    font-family: 'Courgette', cursive;
+    background-color: #570587;
+    color: white;
+}
+
+/* Pseudolinks for footer menu */
+
+.footerlinks a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+/* selected link - only active while clicked on */
+.footerlinks a:active {
+color: #0000FF;
+}
+
+/* active link  - page currently in use - will need to adapt so it is highlighted for desktop/ipad but greyed out on mobile */
+.footerlinks a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Will need to hide the top menu for mobile version */
