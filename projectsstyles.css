@@ -32,7 +32,7 @@ p {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     border: .5em solid navy;
 }
@@ -41,7 +41,7 @@ p {
 
 header {
     display: flex;
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 1 / 2;
     color: white;
     background-color: #570587;
@@ -54,7 +54,7 @@ header {
 
 .topmenu {
     display: flex;
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 2 / 3;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -120,7 +120,7 @@ color: #0000FF;
 /* First project */
 
 .project_one {
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 4 / 5;
     margin: 1em 0;
     border-bottom: .5em solid navy;
@@ -130,7 +130,7 @@ color: #0000FF;
 /* Second project */
 
 .project_two {
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 5 / 6;
     margin: 1em 0;
     border-bottom: .5em solid navy;
@@ -140,7 +140,7 @@ color: #0000FF;
 /* Third project */
 
 .project_three {
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 6 / 7;
     margin: 1em 0;
 }
@@ -153,7 +153,7 @@ color: #0000FF;
     flex-shrink: 3;
     flex-wrap: wrap;
     justify-content: space-around;
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 7/ 8;
     padding: 1.5em 1em 0 1em;
     background-color: #570587;
@@ -172,7 +172,7 @@ color: #0000FF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 8 / 9;
     padding: 0 1em 1em 1em;
     font-family: 'Open Sans', sans-serif;
@@ -180,10 +180,12 @@ color: #0000FF;
 }
 
 .footerlinks a {
-    max-width: 3em;
     color: white;
     flex-grow: 1;
     flex-shrink: 1;
+    text-align: center;
+    justify-content: center;
+    max-width: 3em;
 }
 
 /* Pseudolinks for footer menu */
@@ -209,7 +211,7 @@ color: #0000FF;
 footer {
     display: flex;
     justify-content: center;
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 9 / 10;
     padding: 1em;
     font-family: 'Courgette', cursive;
