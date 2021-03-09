@@ -16,9 +16,9 @@
 
     <div class=container>
 
-        <!-- Header section including main title and top nav bar -->
+        <!-- Header section including main title and top navigation bar -->
         <header id=top>
-            <h1>Katherine Rock</h1>
+                <h1>Katherine Rock</h1>
         </header>
 
         <nav class=topmenu>
@@ -29,7 +29,7 @@
             <a href="contact.html"  class="active">Contact</a>
         </nav>
         
-        <!-- List page title for orientation on mobile version -->
+         <!-- Page title is hidden in CSS. Included in HTML for accessibility -->
 
         <section class="pagetitle">
             <h2>Contact</h2>
@@ -37,11 +37,15 @@
 
         <!-- Main section of page -->
 
+        <!-- Introduction and email address/link -->
+
         <section class="introduction">
             <p>You can email me at
                 <a href="mailto:katherine_rock@hotmail.com">katherine_rock@hotmail.com</a>. 
             Or you may like to visit my GitHub and LinkedIn profiles by following the links below.</p>
         </section>
+
+        <!-- GitHub icon and profile link -->
 
         <section class=github>
             <a href="https://github.com/katherine-rock" target="_blank">
@@ -52,10 +56,14 @@
                 </a>
         </section>
 
+        <!-- LinkedIn badge and profile link -->
+
         <section class="linkedin">
             <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>            
             <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="katherine-rock-3b795770"><a class="LI-simple-link" href='https://au.linkedin.com/in/katherine-rock-3b795770?trk=profile-badge'>Katherine Rock</a></div>
         </section>
+
+        <!-- Contact Form -->
 
         <form>
             <h4>Please complete the form below to send me a message</h4>
@@ -64,10 +72,13 @@
             <label for="email">Email</label>
             <input type="text" id="email" name="email"><br><br>
             <label for="message">Your Message</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input class=send_button type="submit" value="Send">
+        </form> 
+
         </form>
 
-        <!-- Lower nav menu icons -->
+        <!-- Lower navigation menu - metallic icons -->
         <nav class=footericons>
 
             <a href="index.html">
@@ -96,7 +107,7 @@
 
         </nav>
 
-        <!-- Lower nav menu for text links -->
+        <!-- Lower navigation menu - text links -->
 
         <nav class="footerlinks">
 

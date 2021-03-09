@@ -1,4 +1,4 @@
-/* General styles applicable to all versions */
+/* General styles applicable to overall page and all versions */
 
 * {
     margin: 0;
@@ -35,8 +35,10 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    border: .5em solid #C0C0C0;
+    border: .5em solid navy;
 }
+
+/* Header style for name at top of page */
 
 header {
     display: flex;
@@ -45,10 +47,12 @@ header {
     color: white;
     background-color: #570587;
     justify-content: center;
-    border-bottom: .5em solid #C0C0C0;
+    border-bottom: .5em solid navy;
     padding: .75em;
     font-family: 'Courgette', cursive;
 }
+
+/* Top navigation menu */
 
 .topmenu {
     display: flex;
@@ -86,18 +90,17 @@ color: #0000FF;
     border-bottom: .2em solid #570587;
 }
 
+/* Page title is hidden in CSS. It is included in html for readability if no styling is applied */
 .pagetitle {
-    display: flex;
-    grid-column: 2 / 6;
-    grid-row: 3 / 4;
-    margin-top: 1em; 
-    font-family: 'Open Sans', sans-serif;
+    display: none;
 }
 
+/* Set width for blog images */
 .blog_one img, .blog_two img, .blog_three img, .blog_four img, .blog_five img {
     max-width: 100%;
 }
 
+/* Format text within blog posts */
 .blog_one h3, h4, p {
     margin: 0 2em;
 }
@@ -118,64 +121,60 @@ color: #0000FF;
     margin: 0 2em;
 }
 
+/* Blog post 1 - Terminal */
+
 .blog_one {
     grid-column: 1 / 6;
     grid-row: 4 / 5;
     margin: 1em 0;
-    border-bottom: .5em solid #C0C0C0;
+    border-bottom: .5em solid navy;
     padding-bottom: 2em;
 }
+/* Blog post 2 - Git */
 
 .blog_two {
     grid-column: 1 / 6;
     grid-row: 5 / 6;
     margin: 1em 0;
-    border-bottom: .5em solid #C0C0C0;
+    border-bottom: .5em solid navy;
     padding-bottom: 2em;
 }
+
+/* Blog post 1 - HTML */
 
 .blog_three {
     grid-column: 1 / 6;
     grid-row: 6 / 7;
     margin: 1em 0;
-    border-bottom: .5em solid #C0C0C0;
+    border-bottom: .5em solid navy;
     padding-bottom: 2em;
 }
+
+/* Blog post 4 - CSS */
 
 .blog_four {
     grid-column: 1 / 6;
     grid-row: 7 / 8;
     margin: 1em 0;
-    border-bottom: .5em solid #C0C0C0;
+    border-bottom: .5em solid navy;
     padding-bottom: 2em;
 }
+
+/* Blog post 5 - Help available */
 
 .blog_five {
     grid-column: 1 / 6;
     grid-row: 8 / 9;
     margin: 1em 0;
-    padding-bottom: 2em;
 }
 
-/* Pseudolinks for central section of index page */
-
-.topics a:link {
-      color: black;
-    }
-
-.topics a:visited {
-    color: purple;
-}   
-
-.topics a:hover {
-    text-decoration: underline;
+.blog_five a {
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-  }
-  
-/* selected link - only active while clicked on */
-.topics a:active {
-color: #0000FF;
+    margin-left: 4em; 
 }
+
+/* Footer navigation menu - metallic icons */
 
 .footericons {
     display: flex;
@@ -187,7 +186,7 @@ color: #0000FF;
     grid-row: 9/ 10;
     padding: 1.5em 1em 0 1em;
     background-color: #570587;
-    border-top: .5em solid #C0C0C0;
+    border-top: .5em solid navy;
     margin-top: 1.5em;
 }
 
@@ -195,6 +194,8 @@ color: #0000FF;
     max-width: 3em;
 
 }
+
+/* Footer navigation menu - text links */
 
 .footerlinks {
     display: flex;
@@ -214,17 +215,6 @@ color: #0000FF;
     flex-shrink: 1;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    grid-column: 1 / 6;
-    grid-row: 11 / 12;
-    padding: 1em;
-    font-family: 'Courgette', cursive;
-    background-color: #570587;
-    color: white;
-}
-
 /* Pseudolinks for footer menu */
 
 .footerlinks a:hover {
@@ -237,10 +227,21 @@ footer {
 color: #0000FF;
 }
 
-/* active link  - page currently in use - will need to adapt so it is highlighted for desktop/ipad but greyed out on mobile */
+/* active link  - page currently in use */
 .footerlinks a.active {
     font-weight: bold;
     text-decoration: underline;
 }
 
-/* Will need to hide the top menu for mobile version */
+/* Copyright statement */
+
+footer {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 6;
+    grid-row: 11 / 12;
+    padding: 1em;
+    font-family: 'Courgette', cursive;
+    background-color: #570587;
+    color: white;
+}
