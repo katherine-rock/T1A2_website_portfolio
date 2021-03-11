@@ -1,12 +1,24 @@
-/* General styles applicable to overall page and all versions */
+/* For small screens e.g. mobiles */
+
+@media screen and (min-width: 140px) {
 
 * {
     margin: 0;
     padding: 0;
 }
 
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
 }
 
 h3 {
@@ -17,21 +29,23 @@ h3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
-    border: .5em solid navy;
 }
 
 /* Header style for name at top of page */
 
 header {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     grid-column: 1 / 7;
     grid-row: 1 / 2;
     color: white;
-    background-color: #570587;
+    background-color: #141B41;
     justify-content: center;
-    border-bottom: .5em solid navy;
+    align-items: center;
+    border-bottom: .1em solid navy;
     padding: .75em;
-    font-family: 'Courgette', cursive;
+    font-family: 'Kavivanar', cursive;
 }
 
 /* Top navigation bar */
@@ -42,34 +56,32 @@ header {
     grid-row: 2 / 3;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: .75em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
+    padding: .3em .3em 0 .3em;
+    color: #141B41;
+}
+
+.topmenu a{
+    padding: .3em;
 }
 
 /* Pseudolinks for top navigation bar */
-.topmenu a:link {
-      color: black;
-    }
 
 .topmenu a:visited {
-    color: purple;
+    color: #306BAC;
 }   
-
-.topmenu a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-  }
   
     /* selected link - only active while clicked on */
 .topmenu a:active {
-color: navy;
+    color: navy;
 }
-
+/* This has been overwritten - FIX */
     /* active link  - page currently in use*/
 .topmenu a.active {
     font-weight: bold;
-    border-bottom: .2em solid #570587;
+    border-bottom: .2em solid #141B41;
+    color: #141B41;
 }
 
 /* Page title is hidden in CSS. It is included in html for readability if no styling is applied */
@@ -77,25 +89,34 @@ color: navy;
     display: none;
 }
 
+/* Main section box formatting */
+main {
+    padding: 1em;
+    background-color: #DBE6FB;
+    align-items: center;
+    justify-content: center;
+    border: .5em solid #306BAC;
+    margin: 1em;
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+}
+
 /* Introduction paragraph at top of central section */
 
 .introduction {
     display: flex;
     flex-direction: column;
-    grid-column: 2 / 6;
-    grid-row: 4 / 5;
-    padding: .7em 0;
+    padding: .7em 2em;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 /* Icons with links in main section of page  */
 .topics_list {
     display: flex;
     flex-direction: column;
-    grid-column: 2 / 6;
-    grid-row: 5 / 6;
     padding: .5em 0;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 .topics_list img {
@@ -107,88 +128,59 @@ color: navy;
     align-items: center;
 }
 
+/* Element is included only for readability without CSS formatting */
+.topics_list h2 {
+    display: none;
+}
+
 .topics_list h3 {
     padding: 0 0 .4em 1em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
+    color: #306BAC;
 }
 
-/* List of topic icons in main section of page */
-.topics {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    grid-column: 3 / 4;
-    grid-row: 5 / 6;
-    padding: .5em 0;
+/* Links in navigation menu at bottom of page */
+
+.footerfigures a {
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Pseudolinks for central section of index page */
+/* selected link - only active while clicked on */
+.footerfigures a:active {
+color: #0000FF;
+}
 
-.topics a:hover {
+/* active link  - page currently in use */
+.footerfigures a.active {
+    font-weight: bold;
     text-decoration: underline;
-  }
-  
-/* Metallic icons in bottom navigation menu */
+}
 
-.footericons {
+/* Footer navigation menu  */
+.footerfigures {
+    text-align: center;
     display: flex;
     flex-basis:auto;
     flex-shrink: 3;
     flex-wrap: wrap;
     justify-content: space-around;
     grid-column: 1 / 7;
-    grid-row: 6 / 7;
-    padding: 1.5em 1em 0 1em;
-    background-color: #570587;
-    border-top: .5em solid navy;
-    margin-top: 1.5em;
+    grid-row: 4 / 5;
+    background-color: #141B41;
+    border-top: .1em solid navy;
+    padding-top: 1em;
 }
 
-.footericons img {
-    max-width: 3em;
-
+.footerfigures img {
+    padding: 0 .3em;
+    max-width: 2.5em;
 }
 
-/* Links in navigation menu at bottom of page */
-
-.footerlinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    grid-column: 1 / 7;
-    grid-row: 7 / 8;
-    padding: 0 1em 1em 1em;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #570587;
-}
-
-.footerlinks a {
-    color: white;
-    flex-grow: 1;
-    flex-shrink: 1;
-    text-align: center;
-    justify-content: center;
-    max-width: 3em;
-}
-
-/* Pseudolinks for footer menu */
-
-.footerlinks a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-  
-/* selected link - only active while clicked on */
-.footerlinks a:active {
-color: #0000FF;
-}
-
-/* active link  - page currently in use */
-.footerlinks a.active {
-    font-weight: bold;
-    text-decoration: underline;
+/* Profile Links - only for desktop version */
+.profile_links {
+    display: none;
 }
 
 /* Copyright statement */
@@ -197,9 +189,237 @@ footer {
     display: flex;
     justify-content: center;
     grid-column: 1 / 7;
-    grid-row: 8 / 9;
+    grid-row: 5 / 6;
     padding: 1em;
-    font-family: 'Courgette', cursive;
-    background-color: #570587;
+    font-family: 'Kavivanar', cursive;
+    background-color: #141B41;
     color: white;
 }
+
+header h1, h2 {
+    color: white;
+}
+}
+
+/* For medium screens - tablets, iPads etc */
+
+@media  screen and (min-width: 600px) {
+  
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .introduction {
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+    }
+    .topics_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: .5em 0;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .projects {
+        background-image: url("images/Project_one_screenshot.png");
+        background-size: cover;
+        background-position: center;
+        min-height: 12em;
+        background-color: #6F9CEB;
+        width: 40%;
+    }
+    .projects img {
+        display: none;
+    }
+
+    .skills {
+        background-image: url("images/Project_two_image.jpg");
+        background-size: contain;
+        background-position: center;
+        background-color: #6F9CEB;
+        min-height: 12em;
+        width: 40%;
+    }
+
+    .skills img {
+        display: none;
+    }
+
+    .blog {
+        background-image: url("images/blog_resources.png");
+        background-size: cover;
+        background-position: center;
+        background-color: #6F9CEB;
+        min-height: 12em;
+        width: 40%;
+    }
+
+    .blog img{
+        display: none;
+    }
+    .contact {
+        background-image: url("images/Octocat.png");
+        background-size: cover;
+        background-position: top;
+        background-color: #6F9CEB;
+        width: 40%;
+        min-height: 12em;
+    }
+
+    .contact img{
+        display: none;
+    }
+
+    .topics_list h3 {
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: 1px 1px white;
+        font-size: 3em;
+        color: #306BAC;
+        transition: 1.5s;
+    }
+
+    .topics_list section {
+        margin: 1em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: .5em solid #306BAC;
+    }
+
+
+
+    .footerfigures {
+        grid-column: 1 / 7;
+        grid-row: 6 / 7;
+        }
+
+    footer {
+        grid-column: 1 / 7;
+        grid-row: 7 / 8;
+        }
+    
+}
+
+/* For larger screens - laptops, desktops, etc */
+
+@media  screen and (min-width: 992px) {
+    main {
+        margin: 3em;
+    }    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    header {
+        grid-row: 1 /2;
+        grid-column: 1 /4;
+    }
+
+    .topmenu {
+        grid-row: 1 /2;
+        grid-column: 4 / 7;
+        background-color: #141B41;
+        color: white;
+        align-items: center;
+    }
+
+    .introduction {
+        grid-row: 2 /3;
+        grid-column: 2 / 6;
+        padding: 0 5em;
+    }
+
+    .topics_list {
+        grid-row: 3 /4;
+        grid-column: 1 / 7;
+        transition: all 2s;
+    }
+
+    .topics_list h3:hover {
+        font-size: 6em;
+    }
+
+    .footerfigures {
+        grid-row: 4 /5;
+        grid-column: 1 / 5;
+    }
+
+    .footerfigures img {
+        max-width: 3.5em;
+    }
+
+/* Profile links in footer bar for desktop version */
+    .profile_links {
+        text-align: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        grid-row: 4 /5;
+        grid-column: 5 / 7;
+        background-color: #141B41;
+        border-top: .1em solid navy;
+        padding: 1em 3em 0 0;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        }
+    
+
+    .profile_links img {
+        padding: 0 1.5em;
+        max-width: 3.5em;
+    }
+
+    /* Profile links section header included for readability without styling but hidden in CSS */
+    .profile_links h2 {
+        display: none;
+    }
+
+    footer {
+        grid-row: 5 /6;
+        grid-column: 1 / 13;
+    }
+
+    .projects, .skills, .blog, .contact {
+        min-height: 20em;
+    }
+
+    /* Pseudolinks for top navigation bar */
+
+    .topmenu a:hover, .profile_links a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    /* Pseudolinks for top navigation bar */
+
+    .topmenu a:visited, .profile_links a:visited {
+        color: white;
+    }   
+
+    /* active link  - page currently in use*/
+    .topmenu a.active {
+        font-weight: bold;
+        border-bottom: .2em solid #6F9CEB;
+        color: #6F9CEB;
+    }
+    /* Pseudolinks for footer menu */
+
+    .footerfigures a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    /* Pseudolinks for central section of index page */
+
+    .topics a:hover {
+        text-decoration: underline;
+    }
+
+    }

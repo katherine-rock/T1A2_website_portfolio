@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katherine Rock</title>
     <link rel="stylesheet" href="indexstyles.css">
+    <link rel="icon" href="images/Favicon_sml.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +19,8 @@
 
         <!-- Header section including main title and top navigation bar -->
         <header id=top>
-            <h1>Katherine Rock</h1>
+            <a href="index.html"><h1>Katherine Rock</h1>
+            <h2>Full Stack Developer</h2></a>
         </header>
 
         <nav class=topmenu>
@@ -35,6 +37,7 @@
             <h2>Home</h2>
         </section>
 
+        <main>
         <!-- Introduction to Main body of page -->
         <section class="introduction">
             <h3>About Me...</h3>
@@ -44,10 +47,11 @@
         <!-- List of colourful icons with heading links for central section of main page-->
 
         <section class="topics_list">
+            <h2>List of pages</h2>
 
             <!-- Projects -->
 
-            <section>
+            <section class="projects">
                 <a href="projects.html">
                 <img src="images/icon_projects_color_6cm.png" alt=""/>
                 </a>
@@ -59,7 +63,7 @@
 
             <!-- Skills -->
 
-            <section>
+            <section class="skills">
                 <a href="skills.html">
                 <img src="images/icon_skills_color_6cm.png" alt=""/>
                 </a>
@@ -71,7 +75,7 @@
 
             <!-- Blog -->
 
-            <section>
+            <section class="blog">
                 <a href="blog.html">
                 <img src="images/icon_blog_color_6cm.png" alt=""/>
                 </a>
@@ -82,7 +86,7 @@
             </section>
 
             <!-- Contact -->
-            <section>
+            <section class="contact">
                 <a href="contact.html">
                 <img src="images/icon_contact_color_6cm.png" alt=""/>
                 </a>
@@ -94,53 +98,101 @@
             </section>
            
         </section>
+    
+    </main>
 
-        <!-- Lower navigation menu metal icons -->
-        <nav class=footericons>
+<!-- Figures with text links for footer nav menu -->
 
-            <a href="index.html">
-            <img src="images/icon_home_metal_4cm.png" alt="">
-            </a>
+        <nav class="footerfigures">
 
-            <a href="projects.html">
-            <img src="images/icon_projects_metal_4cm.png" alt="">
-            </a>
+            <!-- Home / Index -->
+            <figure>
+                <a href="index.html">
+                <img src="images/footer_icon_home_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="index.html" class="active">Home</a>
+                </figcaption>
+            </figure>
 
-            <a href="skills.html">
-            <img src="images/icon_skills_metal_4cm.png" alt="">
-            </a>
+            <!-- Projects -->
+            <figure>
+                <a href="projects.html">
+                <img src="images/footer_icon_projects_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="projects.html">Projects</a>
+                </figcaption>
+            </figure>
 
-            <a href="blog.html">
-            <img src="images/icon_blog_metal_4cm.png" alt="">
-            </a>
+            <!-- Skills -->
+            <figure>
+                <a href="skills.html">
+                <img src="images/footer_icon_skills_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="skills.html">Skills</a>
+                </figcaption>
+            </figure>
 
-            <a href="contact.html">
-            <img src="images/icon_contact_metal_4cm.png" alt="">
-            </a>
+            <!-- Blog -->
+            <figure>
+                <a href="blog.html">
+                <img src="images/footer_icon_blog_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="blog.html">Blog</a>
+                </figcaption>
+            </figure>
 
-            <a href="#top">
-            <img src="images/icon_top_metal_4cm.png" alt="">
-            </a>
+            <!-- Contact -->
+            <figure>
+                <a href="contact.html">
+                <img src="images/footer_icon_contact_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="contact.html">Contact</a>
+                </figcaption>
+            </figure>
+
+            <!-- Top of page -->
+            <figure>
+                <a href=#top>
+                <img src="images/footer_icon_top_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href=#top>Top</a>
+                </figcaption>
+            </figure>
 
         </nav>
+        
+        <!-- GitHub and LinkedIn icons and links for desktop version -->
 
-        <!-- Lower nav menu for text links -->
+        <section class="profile_links">
 
-        <nav class="footerlinks">
+            <h2>Profile Links</h2>
+            
+            <figure>
+                <a href="https://github.com/katherine-rock" target="_blank">
+                <img src="images/GitHub-Mark-Light-120px-plus.png" alt="">
+                </a>
+                <figcaption>
+                    <a href=#top>GitHub</a>
+                </figcaption>
+            </figure>
 
-            <a href="index.html" class="active">Home</a>
+            <figure>
+                <a href="https://www.linkedin.com/in/katherine-rock-3b795770/" target="_blank">
+                <img src="images/linkedin-icon-2.svg" alt="">
+                </a>
+                <figcaption>
+                    <a href=#top>LinkedIn</a>
+                </figcaption>
+            </figure>
 
-            <a href="projects.html">Projects</a>
-
-            <a href="skills.html">Skills</a>
-
-            <a href="blog.html">Blog</a>
-
-            <a href="contact.html">Contact</a>
-
-            <a href="#top">Top</a>
-        </nav>
-
+        </section>
+        
         <!-- Footer for copyright statement -->
 
         <footer>
