@@ -1,4 +1,6 @@
-/* General styles applicable to overall page and all versions */
+/* For small screens e.g. mobiles */
+
+@media screen and (min-width: 140px) {
 
 * {
     margin: 0;
@@ -9,41 +11,63 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
 h2 {
-    font-size: 1.4em;
+    font-size: 2em;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.2em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
     padding: .5em 0;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h5 {
     padding-bottom: .4em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* h6 used for readability only, not included in CSS display */
+h6 {
+    display: none;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
-    border: .5em solid navy;
 }
 
 /* Header style for name at top of page */
 
 header {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     grid-column: 1 / 7;
     grid-row: 1 / 2;
     color: white;
-    background-color: #570587;
+    background-color: #141B41;
     justify-content: center;
-    border-bottom: .5em solid navy;
+    align-items: center;
+    border-bottom: .1em solid navy;
     padding: .75em;
-    font-family: 'Courgette', cursive;
+    font-family: 'Kavivanar', cursive;
 }
 
 /* Top navigation bar */
@@ -54,34 +78,32 @@ header {
     grid-row: 2 / 3;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: .75em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
+    padding: .3em .3em 0 .3em;
+    color: #141B41;
 }
 
-/* Pseudolinks for top menu bar */
-.topmenu a:link {
-      color: black;
-    }
+.topmenu a {
+    padding: .3em;
+}
+
+/* Pseudolinks for top navigation bar */
 
 .topmenu a:visited {
-    color: purple;
+    color: #306BAC;
 }   
-
-.topmenu a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-  }
   
-/* selected link - only active while clicked on */
+    /* selected link - only active while clicked on */
 .topmenu a:active {
-color: #0000FF;
+    color: navy;
 }
 
 /* active link  - page currently in use*/
 .topmenu a.active {
     font-weight: bold;
-    border-bottom: .2em solid #570587;
+    border-bottom: .2em solid #141B41;
+    color: #141B41;
 }
 
 /* Page title is hidden in CSS. It is included in html for readability if no styling is applied */
@@ -93,23 +115,31 @@ color: #0000FF;
 
 .introduction {
     display: flex;
-    grid-column: 2 / 6;
-    grid-row: 4 / 5;
-    padding: .7em 2em;
+    background-color: #DBE6FB;
+    align-items: flex-start;
+    justify-content: center;
+    border: .5em solid #306BAC;
+    margin: 1em;
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    padding: 1em;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 /* GitHub icon and profile link */
 
 .github {
-    grid-column: 2 / 6;
-    grid-row: 6 / 7;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    margin: 2em;
     display: flex;
     flex-direction: column;
+    background-color: #DBE6FB;
+    align-items: center;
+    justify-content: center;
+    border: .5em solid #306BAC;
+    margin: 1em;
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .github img {
@@ -119,96 +149,98 @@ color: #0000FF;
 /* LinkedIn badge with profile link */
 
 .linkedin {
-    grid-column: 2 / 6;
-    grid-row: 7 / 8;
     display: flex;
+    flex-direction: column;
+    background-color: #DBE6FB;
+    align-items: center;
     justify-content: center;
+    border: .5em solid #306BAC;
+    margin: 1em;
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.linkedin a {
+    padding-top: .5em;
 }
 
 /* Contact form */
 
 form {
-    grid-column: 2 / 6;
-    grid-row: 8 / 9;
+    display: flex;
+    flex-direction: column;
+    background-color: #DBE6FB;
+    align-items: center;
+    justify-content: center;
+    border: .5em solid #306BAC;
+    margin: 1em;
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+    padding: 1em 2em 2em 2em;
     font-family: 'Open Sans', sans-serif;
-    margin: 2em;
 }
 
 form input {
     width: 100%;
+    min-height: 2em;
 }
 
 form #message {
-    height: 6em;
+    min-height: 6em;
     width: 100%;
 }
 
 .send_button {
-    font-family: 'Open Sans', sans-serif;
     color: white;
-    background-color: #570587;
+    background-color: #306BAC;
     font-size: 1em;
     min-height: 2em;
+    width: 30%;
 }
 
-/* Footer navigation menu - metallic icons */
+/* Links in navigation menu at bottom of page */
 
-.footericons {
+.footerfigures a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* selected link - only active while clicked on */
+.footerfigures a:active {
+color: #0000FF;
+}
+
+/* active link  - page currently in use */
+.footerfigures a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Footer navigation menu  */
+.footerfigures {
+    text-align: center;
     display: flex;
     flex-basis:auto;
     flex-shrink: 3;
     flex-wrap: wrap;
     justify-content: space-around;
     grid-column: 1 / 7;
-    grid-row: 9/ 10;
-    padding: 1.5em 1em 0 1em;
-    background-color: #570587;
-    border-top: .5em solid navy;
-    margin-top: 1.5em;
+    grid-row: 7 / 8;
+    background-color: #141B41;
+    border-top: .1em solid navy;
+    padding-top: 1em;
 }
 
-.footericons img {
-    max-width: 3em;
+.footerfigures img {
+    padding: 0 .3em;
+    max-width: 2.5em;
 }
 
-/* Footer navigation menu - text links */
-
-.footerlinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    grid-column: 1 / 7;
-    grid-row: 10 / 11;
-    padding: 0 1em 1em 1em;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #570587;
-}
-
-.footerlinks a {
-    color: white;
-    flex-grow: 1;
-    flex-shrink: 1;
-    text-align: center;
-    justify-content: center;
-    max-width: 3em;
-}
-
-/* Pseudolinks for footer menu */
-
-.footerlinks a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-  
-/* selected link - only active while clicked on */
-.footerlinks a:active {
-color: #0000FF;
-}
-
-/* active link  - page currently in use */
-.footerlinks a.active {
-    font-weight: bold;
-    text-decoration: underline;
+/* Profile Links - only for desktop version */
+.profile_links {
+    display: none;
 }
 
 /* Copyright statement */
@@ -217,9 +249,171 @@ footer {
     display: flex;
     justify-content: center;
     grid-column: 1 / 7;
-    grid-row: 11 / 12;
+    grid-row: 8 / 9;
     padding: 1em;
-    font-family: 'Courgette', cursive;
-    background-color: #570587;
+    font-family: 'Kavivanar', cursive;
+    background-color: #141B41;
     color: white;
+}
+
+/* Add colour to override links in header */
+h1, h2 {
+    color: white;
+}
+}
+
+/* For medium screens - tablets, iPads etc */
+
+@media  screen and (min-width: 600px) {
+  
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .github {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    form {
+        grid-column: 4 / 7;
+        grid-row: 3 / 4;
+    }
+
+    .linkedin {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;    
+    }
+    
+    .introduction {
+        grid-column: 4 / 7;
+        grid-row: 4 / 5;  
+        justify-content: flex-start;
+        padding: 3em;
+    }
+
+    .footerfigures {
+        grid-column: 1 / 7;
+        grid-row: 5 / 6;
+        }
+
+    footer {
+        grid-column: 1 / 7;
+        grid-row: 6 / 7;
+        }  
+}
+
+/* For larger screens - laptops, desktops, etc */
+
+@media  screen and (min-width: 992px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    header {
+        grid-row: 1 /2;
+        grid-column: 1 /4;
+    }
+
+    .topmenu {
+        grid-row: 1 /2;
+        grid-column: 4 / 7;
+        background-color: #141B41;
+        color: white;
+        align-items: center;
+    }
+
+    .github {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+    }
+
+    form {
+        grid-row: 2 / 3;
+        grid-column: 4 / 6;
+    }
+
+    .linkedin {
+        grid-row: 3 / 4;
+        grid-column: 2 / 4;
+    }
+
+    .introduction {
+        grid-row: 3 / 4;
+        grid-column: 4 / 6;
+    }
+
+    .footerfigures {
+        grid-row: 4 /5;
+        grid-column: 1 / 5;
+    }
+
+    .footerfigures img {
+        max-width: 3.5em;
+    }
+
+/* Profile links in footer bar for desktop version */
+    .profile_links {
+        text-align: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        grid-row: 4 /5;
+        grid-column: 5 / 7;
+        background-color: #141B41;
+        border-top: .1em solid navy;
+        padding: 1em 3em 0 0;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        }
+    
+    .profile_links img {
+        padding: 0 1.5em;
+        max-width: 3.5em;
+    }
+
+    /* Profile links section header included for readability without styling but hidden in CSS */
+    .profile_links h2 {
+        display: none;
+    }
+
+    footer {
+        grid-row: 5 /6;
+        grid-column: 1 / 7;
+    }
+
+    .projects, .skills, .blog, .contact {
+        min-height: 20em;
+    }
+
+    /* Pseudolinks for top navigation bar */
+
+    .topmenu a:hover, .profile_links a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    /* Pseudolinks for top navigation bar */
+
+    .topmenu a:visited, .profile_links a:visited {
+        color: white;
+    }   
+
+    /* active link  - page currently in use*/
+    .topmenu a.active {
+        font-weight: bold;
+        border-bottom: .2em solid #6F9CEB;
+        color: #6F9CEB;
+    }
+    /* Pseudolinks for footer menu */
+
+    .footerfigures a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
 }
