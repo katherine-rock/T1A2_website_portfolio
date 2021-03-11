@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katherine Rock</title>
+    <title>Katherine Rock | Skills</title>
     <link rel="stylesheet" href="skillsstyles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Favicon_sml.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
 
         <!-- Header section including main title and top navigation bar -->
         <header id=top>
-            <h1>Katherine Rock</h1>
+            <a href="index.html"><h1>Katherine Rock</h1>
+            <h2>Full Stack Developer</h2></a>
         </header>
 
         <nav class=topmenu>
@@ -36,38 +38,44 @@
         </section>
 
         <!-- List of current skills  -->
+        <section class="allskills">
 
-        <section class="currentskills">
-            <h3>Current Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+            <h6>Skills</h6>
+
+            <section class="currentskills">
+                <h3>Current Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </section>
+
+            <!-- List of upcoming skills -->
+
+            <section class="comingsoon">
+                <h3>Coming Soon</h3>
+                <ul>
+                    <li>Ruby</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </section>
+
         </section>
 
-<!-- added empty paragraph element to format box around education section without sacrificing grid layout -->
+         <!-- CV for download - icon and text link -->
+         <section class="download">
+            <h3>CV for download</h3>
+            <p>Here is a copy of my CV for further details of my education and experience.</p>
 
-        <section class=box_education>
-            <p></p>
-        </section>
+            <a href="Katherine_Rock_CV_09Mar2021.pdf" download><img src="images/icon_CV_color_10cm.png" alt=""></a>
 
-        <!-- List of upcoming skills -->
+            <a href="Katherine_Rock_CV_09Mar2021.pdf" download>Katherine Rock CV</a>
 
-        <section class="comingsoon">
-            <h3>Coming Soon</h3>
-            <ul>
-                <li>Ruby</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        </section>
-
-        <!-- Skills graphic -->
-        <section class=icon>
-            <img src="images/icon_skills_color_6cm.png" alt="" />
         </section>
 
         <!-- Education -->
+        
         <section class="education">
             <h3>Education</h3>
             <h4>Diploma of Information Technology, In progress</h4>
@@ -86,8 +94,8 @@
             <h3>Recent Work Experience</h3>
             
             <h4>Senior Clinical Research Associate, Southern Star Research</h4>
-            <h5>November 2019 to February 2021 (Full Time)</h5>
-            <h5>February 2021 to present (Casual)</h5>
+            <h4>November 2019 to February 2021 (Full Time)</h4>
+            <h4>February 2021 to present (Casual)</h4>
             <p>Responsibilities include:</p>
                 <ul>
                     <li>Onsite monitoring of clinical trials</li>
@@ -97,70 +105,98 @@
                 </ul>
         </section>
 
-        <!-- CV for download - icon and text link -->
-        <section class="download">
-            <h3>CV for download</h3>
-            <p>Here is a copy of my CV for further details of my education and experience.</p>
+        <!-- Figures with text links for footer nav menu -->
 
-            <a href="Katherine Rock_CV_09Mar2021.pdf" download>
-            <img src="images/icon_CV_color_10cm.png" alt="">
-            </a>
+        <nav class="footerfigures">
 
-            <a href="Katherine Rock_CV_09Mar2021.pdf" download>Katherine Rock CV</a>
+            <!-- Home / Index -->
+            <figure>
+                <a href="index.html">
+                <img src="images/footer_icon_home_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="index.html" class="active">Home</a>
+                </figcaption>
+            </figure>
+
+            <!-- Projects -->
+            <figure>
+                <a href="projects.html">
+                <img src="images/footer_icon_projects_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="projects.html">Projects</a>
+                </figcaption>
+            </figure>
+
+            <!-- Skills -->
+            <figure>
+                <a href="skills.html">
+                <img src="images/footer_icon_skills_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="skills.html">Skills</a>
+                </figcaption>
+            </figure>
+
+            <!-- Blog -->
+            <figure>
+                <a href="blog.html">
+                <img src="images/footer_icon_blog_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="blog.html">Blog</a>
+                </figcaption>
+            </figure>
+
+            <!-- Contact -->
+            <figure>
+                <a href="contact.html">
+                <img src="images/footer_icon_contact_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href="contact.html">Contact</a>
+                </figcaption>
+            </figure>
+
+            <!-- Top of page -->
+            <figure>
+                <a href=#top>
+                <img src="images/footer_icon_top_4cm.png" alt="">
+                </a>
+                <figcaption>
+                    <a href=#top>Top</a>
+                </figcaption>
+            </figure>
+
+        </nav>
+        
+        <!-- GitHub and LinkedIn icons and links for desktop version -->
+
+        <section class="profile_links">
+
+            <h2>Profile Links</h2>
+            
+            <figure>
+                <a href="https://github.com/katherine-rock" target="_blank">
+                <img src="images/GitHub-Mark-Light-120px-plus.png" alt="">
+                </a>
+                <figcaption>
+                    <a href=#top>GitHub</a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://www.linkedin.com/in/katherine-rock-3b795770/" target="_blank">
+                <img src="images/linkedin_icon.png" alt="">
+                </a>
+                <figcaption>
+                    <a href=#top>LinkedIn</a>
+                </figcaption>
+            </figure>
 
         </section>
 
-        <!-- added empty paragraph element to format box around download section without sacrificing grid layout -->
-
-        <section class=box_download>
-            <p></p>
-        </section>
-
-        <!-- Lower navigation menu metallic icons -->
-        <nav class=footericons>
-
-            <a href="index.html">
-            <img src="images/icon_home_metal_4cm.png" alt="">
-            </a>
-
-            <a href="projects.html">
-            <img src="images/icon_projects_metal_4cm.png" alt="">
-            </a>
-
-            <a href="skills.html">
-            <img src="images/icon_skills_metal_4cm.png" alt="">
-            </a>
-
-            <a href="blog.html">
-            <img src="images/icon_blog_metal_4cm.png" alt="">
-            </a>
-
-            <a href="contact.html">
-            <img src="images/icon_contact_metal_4cm.png" alt="">
-            </a>
-
-            <a href="#top">
-            <img src="images/icon_top_metal_4cm.png" alt="">
-            </a>
-
-        </nav>
-
-        <!-- Lower navigation menu for text links -->
-
-        <nav class="footerlinks">
-
-            <a href="index.html">Home</a>
-
-            <a href="projects.html">Projects</a>
-
-            <a href="skills.html" class="active">Skills</a>
-
-            <a href="blog.html">Blog</a>
-
-            <a href="contact.html">Contact</a>
-
-            <a href="#top">Top</a>
-        </nav>
 
         <!-- Footer for copyright statement -->
 
