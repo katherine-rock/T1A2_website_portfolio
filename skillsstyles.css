@@ -80,7 +80,7 @@ header {
     color: #141B41;
 }
 
-.topmenu a{
+.topmenu a {
     padding: .3em;
 }
 
@@ -93,6 +93,13 @@ header {
     /* selected link - only active while clicked on */
 .topmenu a:active {
     color: navy;
+}
+
+/* active link  - page currently in use*/
+.topmenu a.active {
+    font-weight: bold;
+    border-bottom: .2em solid #141B41;
+    color: #141B41;
 }
 
 /* Page title is hidden in CSS. It is included in html for readability if no styling is applied */
@@ -202,6 +209,7 @@ header {
 .footerfigures a:active {
 color: #0000FF;
 }
+
 /* active link  - page currently in use */
 .footerfigures a.active {
     font-weight: bold;
@@ -321,21 +329,25 @@ h1, h2 {
     .allskills {
         grid-row: 2 / 3;
         grid-column: 2 / 4;
+        margin-top: 2em;
     }
 
     .download {
         grid-row: 2 / 3;
         grid-column: 4 / 6;
+        margin-top: 2em;
     }
 
     .experience {
         grid-row: 3 / 4;
         grid-column: 2 / 4;
+        margin-bottom: 2em;
     }
 
     .education {
         grid-row: 3 / 4;
         grid-column: 4 / 6;
+        margin-bottom: 2em;
     }
 
     .footerfigures {
@@ -405,11 +417,5 @@ h1, h2 {
     .footerfigures a:hover {
         text-decoration: underline;
         font-weight: bold;
-    }
-
-    /* Pseudolinks for central section of index page */
-
-    .topics a:hover {
-        text-decoration: underline;
     }
 }

@@ -331,21 +331,25 @@ h1, h2 {
     .github {
         grid-row: 2 / 3;
         grid-column: 2 / 4;
+        margin-top: 2em;
     }
 
     form {
         grid-row: 2 / 3;
         grid-column: 4 / 6;
+        margin-top: 2em;
     }
 
     .linkedin {
         grid-row: 3 / 4;
         grid-column: 2 / 4;
+        margin-bottom: 2em;
     }
 
     .introduction {
         grid-row: 3 / 4;
         grid-column: 4 / 6;
+        margin-bottom: 2em;
     }
 
     .footerfigures {

@@ -254,6 +254,10 @@ footer {
     color: white;
 }
 
+/* Add colour to override links in header */
+h1, h2 {
+    color: white;
+}
 
 /* For medium screens - tablets, iPads etc */
 

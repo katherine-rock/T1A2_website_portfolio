@@ -102,6 +102,7 @@ color: navy;
     display: none;
 }
 
+
 /* Main section of page - applicable to all projects */
 
 .project_one img, .project_two img, .project_three img {
@@ -224,6 +225,9 @@ footer {
     padding: 1em;
     font-family: 'Kavivanar', cursive;
     background-color: #141B41;
+    color: white;
+}
+header h1, h2 {
     color: white;
 }
 
