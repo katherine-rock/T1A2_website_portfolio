@@ -13,7 +13,7 @@ https://github.com/katherine-rock/T1A2_website_portfolio
 The purpose of creating this website was to develop and practise HTML and CSS skills and to demonstrate these skills to potential employers. 
 
 ## Sitemap ##
-![Sitemap](docs/T1A2_Portfolio_sitemap.png)
+![Sitemap](T1A2_Portfolio_sitemap.png)
 
 ## Functionality / Features ##
 
