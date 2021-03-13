@@ -90,7 +90,7 @@ header {
     color: #306BAC;
 }   
   
-    /* selected link - only active while clicked on */
+/* selected link - only active while clicked on */
 .topmenu a:active {
     color: navy;
 }

@@ -79,7 +79,7 @@ header {
     padding: .3em;
 }
 
-    /* Pseudolinks for top navigation bar */
+/* Pseudolinks for top navigation bar */
 
 .topmenu a:visited {
     color: #306BAC;
@@ -102,11 +102,10 @@ color: navy;
     display: none;
 }
 
-
 /* Main section of page - applicable to all projects */
 
 .project_one img, .project_two img, .project_three img {
-    max-width: 90%;
+    max-width: 100%;
     align-self: center;
     justify-self: center;
 }
@@ -230,6 +229,7 @@ footer {
 header h1, h2 {
     color: white;
 }
+}
 
 /* For medium screens - tablets, iPads etc */
 
@@ -268,7 +268,6 @@ header h1, h2 {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
     }
-}
 
 /* Grid layout within indidivual section for project two - Asteroid Dodge game on Scratch */
 .project_two {
@@ -431,5 +430,4 @@ header h1, h2 {
     .topics a:hover {
         text-decoration: underline;
     }
-
     }

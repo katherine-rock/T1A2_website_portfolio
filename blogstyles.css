@@ -71,7 +71,6 @@ header {
     justify-content: space-around;
     font-family: 'Open Sans', sans-serif;
     padding: .3em .3em 0 .3em;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     color: #141B41;
 }
@@ -80,7 +79,7 @@ header {
     padding: .3em;
 }
 
-    /* Pseudolinks for top navigation bar */
+/* Pseudolinks for top navigation bar */
 
 .topmenu a:visited {
     color: #306BAC;
@@ -111,6 +110,10 @@ color: navy;
 }
 
 /* Format text within blog posts */
+.list_posts {
+    margin: 0 2em;
+}
+
 .blog_one h3, h4, p {
     margin: 0 2em;
 }
@@ -131,6 +134,10 @@ color: navy;
     margin: 0 2em;
 }
 
+.blog_five h6 {
+    display: none;
+}
+
 main {
     grid-column: 1 / 7;
     grid-row: 3 / 4;
@@ -138,7 +145,29 @@ main {
     flex-direction: column;
 }
 
-/* Blog post 1 - Terminal */
+/* List of blog posts */
+
+.list_posts {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #DBE6FB;
+    border: .5em solid #306BAC;
+    margin: 1em;
+    align-items: center;
+}
+
+.list_posts section {
+    display: flex;
+    padding: .3em 1em;
+}
+
+.list_posts h3 {
+    text-align: left;
+    padding-bottom: .5em;
+}
+
+/* Blog post 1 - Coffee */
 
 .blog_one {
     display: flex;
@@ -269,7 +298,7 @@ h1, h2 {
         grid-template-rows: auto;
     }
 
-    /* Grid layout within individual section for odd numbered blog posts - post one - Terminal */
+    /* Grid layout within individual section for odd numbered blog posts - post one - Coffee */
     .blog_one {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -382,8 +411,8 @@ h1, h2 {
     text-align: left;
 }
 
-    /* Grid layout within individual section for odd numbered blog posts - post five - resources - contains extra section for links */
-    .blog_five {
+/* Grid layout within individual section for odd numbered blog posts - post five - resources - contains extra section for links */
+.blog_five {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
